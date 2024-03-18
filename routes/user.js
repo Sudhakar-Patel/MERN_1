@@ -4,13 +4,6 @@ import { isAuthenticated } from '../middlewares/auth.js';
 
 const router=express.Router();
 
-router.post('/',(req,res)=>{
-    res.json({
-        success:true,
-        message:"home route"
-    })
-})
-
 router.post('/register',userRegister)
 router.post('/login',userLogin)
 router.get('/logout',userLogout)
